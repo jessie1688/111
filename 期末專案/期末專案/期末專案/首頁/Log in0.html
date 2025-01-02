@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXX 店家首頁</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="Log in0.css">
+    <!-- 引入 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 頁首導覽列 -->
+    <header>
+        <nav class="navbar">
+            <div class="cart-icon" id="nav-cart-icon">
+                <img src="cart.jpg.jpg" alt="購物車">
+            </div>
+            <ul class="nav-links">
+                <li><a href="test.html">首頁</a></li>
+                <li class="products-dropdown">
+                    <a href="#" class="active">所有商品</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="desserts.html">甜點類</a></li>
+                        <li><a href="coffee.html">咖啡</a></li>
+                    </ul>
+                </li>
+                <li><a href="new.html">活動公告</a></li>
+                <li><a href="story.html">關於我們</a></li>
+                <li><a href="intro.html">產品介紹</a></li>
+                <li><a href="limited.html">期間限定</a></li>
+            </ul>
+            <!-- 修改 user-area 部分以與 test.html 一致 -->
+            <div class="user-area">
+                <a href="member.html" class="active">
+                    <img src="head.jpg" alt="會員頭像">
+                    <a href="Log in0.html" class="member-link">會員</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 添加購物車側邊欄 -->
+    <aside class="shopping-cart" id="shopping-cart">
+        <div class="cart-header">
+            <h2>購物車</h2>
+        </div>
+    </aside>
+
+    <!-- 登入畫面 -->
+    <main>
+        <div class="container">
+            <h1>登入會員</h1>
+            <form action="/login" method="POST">
+                <input type="email" name="email" placeholder="帳號 (e-mail)" required>
+                <input type="password" name="password" placeholder="密碼" required>
+                <button class="btn-submit" type="submit"><a href="test.html">登入</a></button>
+            </form>
+            <div class="links">
+                <p><a href="#">忘記密碼？</a></p> 
+                <p>點我<a href="test.html">回首頁</a></p>
+                <p>尚未註冊會員？<a href="register.html">點我註冊</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- 聯絡資訊 -->
+    <footer>
+        <div class="contact-info">
+            <h3>Contact us</h3>
+            <p>台北分店：0988888888</p>
+            <p>台中分店：0988888888</p>
+            <p>高雄分店：0988888888</p>
+        </div>
+        <div class="visit-info">
+            <h3>Visit us</h3>
+            <p>台北分店：台北市中山區XX路XX號</p>
+            <p>台中分店：台中市中山區XX路XX號</p>
+            <p>高雄分店：高雄市中山區XX路XX號</p>
+            <p>營業時間：11:00 - 21:00</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow us</h3>
+            <div class="tools">
+                <img src="ig.jpg" alt="Instagram">
+                <img src="fb.jpg" alt="Facebook">
+                <img src="mail.jpg" alt="Mail">
+                <img src="twit.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

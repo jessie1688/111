@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員資料</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="member.css">
+</head>
+
+<body>
+    <!-- Header 部分 -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="test.html">
+                    <img src="cart.jpg.jpg" alt="購物車">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="test.html">首頁</a></li>
+                <li><a href="story.html">關於我們</a></li>
+                <li><a href="new.html">活動公告</a></li>
+                <li><a href="limited.html">期間限定</a></li>
+                <li><a href="intro.html">產品介紹</a></li>
+            </ul>
+            <div class="user-area">
+                <a href="member.html" class="active">
+                    <img src="head.jpg" alt="會員頭像">
+                    <a href="Log in0.html">會員</a>
+                </a>
+            </div>
+        </nav>
+    </header>
+        <!-- 添加購物車側邊欄 -->
+        <aside class="shopping-cart" id="shopping-cart">
+            <div class="cart-header">
+                <h2>購物車</h2>
+                                <!-- 購物車商品項目 -->
+            <div class="cart-item">
+                <img src="IMG_4205.JPG" alt="商品1" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>手工布蕾</h3>
+                    <p class="price">NT$ 120</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">&times;</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="top2.jpg.JPG" alt="商品2" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>焦糖舞曲</h3>
+                    <p class="price">NT$ 110</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">&times;</button>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <div class="subtotal">
+                <span>小計：</span>
+                <span class="subtotal-amount">NT$ 340</span>
+            </div>
+            <button class="checkout-btn">結帳</button>
+        </div>
+    </aside>
+
+            </div>
+        </aside>
+    
+    <!-- 主要內容區 -->
+    <main>
+        <section id="mainSection">
+            <div id="memberProfileSection">
+                <!-- 個人資料區塊 -->
+                <div class="profile-header">
+                    <img src="head.jpg" alt="會員照片" class="profile-photo">
+                    <div class="profile-info">
+                        <h2>會員基本資料</h2>
+                        <div class="info-item">
+                            <p><strong>會員姓名：</strong> 吳芋泥</p>
+                            <p><strong>電子郵件：</strong> taro@gmail.com</p>
+                            <p><strong>電話：</strong> 0912-345-678</p>
+                            <p><strong>地址：</strong> 台北市中山區中山路123號</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 消費紀錄 -->
+                <div class="record-section">
+                    <h2 class="section-title">消費紀錄</h2>
+                    <div class="record-container">
+                        <div class="history-item">
+                            <h3>訂單編號：CO24010001</h3>
+                            <div class="order-details">
+                                <p>購買日期：2024-01-20</p>
+                                <p>商品名稱：香濃拿鐵</p>
+                                <p>數量：1杯</p>
+                                <p>金額：NT$ 90</p>
+                                <p>訂單狀態：已完成</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 評論與評分 -->
+                <div class="review-section">
+                    <h2 class="section-title">評論與評分紀錄</h2>
+                    <div class="review-container">
+                        <div class="review-item">
+                            <h3>香濃拿鐵</h3>
+                            <div class="review-details">
+                                <p class="rating">評分：★★★★★</p>
+                                <p class="comment">評論：口感細緻綿密，香氣十足，非常推薦！</p>
+                                <p class="date">評論日期：2024-01-22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜點類</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <nav class="navbar">
+            <div class="cart-icon" id="nav-cart-icon">
+                <img src="cart.jpg.jpg" alt="購物車">
+            </div>
+            <ul class="nav-links">
+                <li><a href="test.html">首頁</a></li>
+                <li class="products-dropdown">
+                    <a href="#" class="active">所有商品</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="desserts.html" class="active">甜點類</a></li>
+                        <li><a href="coffee.html">咖啡</a></li>
+                    </ul>
+                </li>
+                <li><a href="new.html">活動公告</a></li>
+                <li><a href="story.html">關於我們</a></li>
+                <li><a href="intro.html">產品介紹</a></li>
+                <li><a href="limited.html">期間限定</a></li>
+            </ul>
+            <!-- 在每個頁面的導覽列中修改 user-area 部分 -->
+            <div class="user-area">
+                <a href="member.html" class="active">
+                    <img src="head.jpg" alt="會員頭像">
+                    <a href="Log in0.html" class="member-link">會員</a>  <!-- 修改這裡 -->
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 在 header 後面立即添加購物車側欄 -->
+    <aside class="shopping-cart" id="shopping-cart">
+        <div class="cart-header">
+            <h2>購物車</h2>
+        </div>
+        
+        <div class="cart-items">
+            <!-- 購物車商品會在這裡動態顯示 -->
+        </div>
+
+        <div class="cart-summary">
+            <div class="subtotal">
+                <span>小計：</span>
+                <span class="subtotal-amount">NT$ 0</span>
+            </div>
+            <button class="checkout-btn">結帳</button>
+        </div>
+    </aside>
+
+    <!-- 限定商品 -->
+    <div class="container">
+        <h1>產品介紹</h1>
+        <div class="product-grid">
+            <div class="product">
+                <img src="IMG_4206.JPG" alt="手工蛋塔">
+                <h3>手工蛋塔</h3>
+                <p>這是金黃色、外皮酥脆的蛋塔，一道廣受喜愛的甜點。它的主要特色包括：</p>
+                
+                <ul>
+                    <li><strong>酥脆的外皮：</strong>蛋塔的外皮通常使用千層酥皮製成，層次分明，入口時帶有酥鬆的口感。</li>
+                    
+                    <li><strong>滑嫩的內餡：</strong>中心是香甜濃郁的蛋奶餡，製作過程中以雞蛋、牛奶和糖為主要原料，經過烘焙後呈現嫩滑的質地。</li>
+                    
+                    <li><strong>誘人的烤色：</strong>烘焙完成後，表面通常會有一層金黃色或焦糖色，帶來視覺與味覺的雙重享受。</li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="top2.jpg.JPG" alt="焦糖舞曲">
+                <h3>焦糖舞曲</h3>
+                <p>這是一道經典的法式甜點，以細膩的口感和獨特的焦糖層著稱。它的主要特色包括：</p>
+                
+                <ul>
+                    <li><strong>香脆的焦糖層：</strong>表面覆蓋著一層金黃色的焦糖，輕輕敲擊時會發出清脆的聲響，入口即化。</li>
+                    
+                    <li><strong>絲滑的卡士達：</strong>底層是由雞蛋、鮮奶油和香草莢製成的卡士達醬，口感細膩綿密，香甜不膩。</li>
+                    
+                    <li><strong>完美的層次感：</strong>當湯匙破開焦糖層時，可以感受到酥脆與滑嫩的雙重口感，是一道令人難忘的法式經典甜點。</li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="IMG_4209.JPG" alt="濃湯奶磚">
+                <h3>濃湯奶磚</h3>
+                <p>這是一道以法式吐司為基礎，加入蒜香調味的創新甜點。它的主要特色包括：</p>
+                
+                <ul>
+                    <li><strong>蒜香四溢：</strong>吐司中加入了大量的蒜末，烘烤後散發出濃郁的蒜香，為甜點增添了一抹獨特的風味。</li>
+                    
+                    <li><strong>酥脆的口感：</strong>吐司經過烘烤後，外皮呈現金黃色，口感酥脆，內部則保持柔軟。</li>
+                    
+                    <li><strong>多層次的風味：</strong>吐司中夾入了奶油和糖漿，每一口都能感受到甜與鹹的完美平衡。</li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="IMG_4208.JPG" alt="可麗露">
+                <h3>可麗露</h3>
+                <p>這是一道精緻的法式小點心，以獨特的外型和豐富的口感聞名。它的主要特色包括：</p>
+                
+                <ul>
+                    <li><strong>獨特的外型：</strong>呈現典雅的羅紋外形，每一道凹凸紋路都完美呈現，猶如精緻的藝術品。</li>
+                    
+                    <li><strong>香濃的內餡：</strong>內部填充香濃的巧克力卡士達醬，濕潤綿密，每一口都充滿奶香與蛋香。</li>
+                    
+                    <li><strong>完美的口感：</strong>外層經過特製的可麗露模具烤製，形成金黃酥脆的外殼，搭配柔滑的內餡，層次分明。</li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="top2.jpg.JPG" alt="焦糖可頌">
+                <h3>焦糖可頌</h3>
+                <p>這是一道經典的法式酥皮麵包，以層層疊疊的酥脆口感聞名。它的主要特色包括：</p>
+                <ul>
+                    <li><strong>千層酥皮：</strong>採用傳統法式製作工藝，將奶油摺疊在麵團中，烘烤後呈現出數十層薄如蟬翼的酥皮。</li>
+                    
+                    <li><strong>黃金外表：</strong>表面呈現誘人的金黃色澤，每一片酥皮都散發著濃郁的奶香，外層酥脆可口。</li>
+                    
+                    <li><strong>層次口感：</strong>咬下的瞬間可以感受到外酥內軟的層次分明，一層層酥皮在口中化開，帶來極致的美味體驗。</li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="IMG_4207.JPG" alt="櫻桃布朗尼">
+                <h3>櫻桃布朗尼</h3>
+                <p>這是一道經典的巧克力蛋糕，以濃郁的可可香氣和綿密的口感著稱。它的主要特色包括：</p>
+                <ul>
+                    <li><strong>頂級可可：</strong>選用高品質的比利時巧克力，口感細緻，香氣濃郁，帶來純正的巧克力風味。</li>
+                    
+                    <li><strong>濕潤口感：</strong>蛋糕體保持最佳濕潤度，入口即化，每一口都能感受到綿密的質地和濃郁的可可香。</li>
+                    
+                    <li><strong>層次豐富：</strong>表面淋上香濃的巧克力醬，搭配細緻的巧克力碎片點綴，口感與視覺都完美呈現。</li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="coffee.jpg" alt="香濃拿鐵">
+                <h3>香濃拿鐵</h3>
+                <p>這是一杯完美調和濃縮咖啡與鮮奶的經典飲品，口感細緻綿密。它的主要特色包括：</p>
+                <ul>
+                    <li><strong>完美比例：</strong>使用義式濃縮咖啡為基底，搭配細緻綿密的蒸煮鮮奶，黃金比例調配，帶來最佳風味。</li>
+                    
+                    <li><strong>奶泡藝術：</strong>表面點綴精緻的拉花圖案，不只是視覺享受，更讓每一口都能品嚐到細膩的奶泡口感。</li>
+                    
+                    <li><strong>溫度控制：</strong>嚴格控制沖煮溫度，確保咖啡的香醇與鮮奶的甜美能完美融合，不會破壞彼此的風味。</li>
+                </ul>
+            </div>
+            <div class="product">
+                <img src="tea.jpg" alt="經典紅茶">
+                <h3>經典紅茶</h3>
+                <p>這是一杯以優質茶葉細心沖泡的紅茶，散發著迷人的茶香與琥珀色澤。它的主要特色包括：</p>
+                <ul>
+                    <li><strong>茶葉精選：</strong>採用斯里蘭卡頂級紅茶葉，經過專業茶師嚴格把關，確保每一片茶葉的品質。</li>
+                    
+                    <li><strong>完美沖泡：</strong>以最適溫度的熱水沖泡，精準控制時間，讓茶葉完整釋放其醇厚的風味與香氣。</li>
+                    
+                    <li><strong>絕佳韻味：</strong>入口時可感受到清爽的茶香，隨後展現出細膩的果香與麥芽香，餘韻悠長。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--聯絡資訊-->
+    <footer>
+        <div class="contact-info">
+            <h3>Contact us</h3>
+            <p>台北分店：0988888888</p>
+            <p>台中分店：0988888888</p>
+            <p>高雄分店：0988888888</p>
+        </div>
+        <div class="visit-info">
+            <h3>Visit us</h3>
+            <p>台北分店：台北市中山區XX路XX號</p>
+            <p>台中分店：台中市中山區XX路XX號</p>
+            <p>高雄分店：高雄市中山區XX路XX號</p>
+            <p>營業時間：11:00 - 21:00</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow us</h3>
+            <div class="tools">
+                <img src="ig.jpg" alt="Instagram">
+                <img src="fb.jpg" alt="Facebook">
+                <img src="mail.jpg" alt="Mail">
+                <img src="twit.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

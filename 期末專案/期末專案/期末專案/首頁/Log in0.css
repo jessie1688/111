@@ -1,0 +1,155 @@
+/* 定義網頁的樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDF8F3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #f8f7f6;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 80px auto 50px auto;
+    border: 1px solid #e6e1db;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5e5a54;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box {
+    background: #e6e1db;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d4cdc3;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #c7afa8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(199, 175, 168, 0.3);
+}
+
+.btn-submit {
+    background: #c7afa8;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background: #b39c95;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(199, 175, 168, 0.4);
+}
+
+.btn-submit a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #5e5a54;
+}
+
+.links a {
+    color: #c7afa8;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 5px;
+}
+
+.links a:hover {
+    color: #b39c95;
+}
+
+/* 購物車側邊欄樣式 */
+.shopping-cart {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 1001;
+}
+
+/* Footer 樣式 */
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color:  #cebdab;
+    padding: 40px 20px;
+}
+
+.contact-info,
+.visit-info,
+.social-media {
+    margin-bottom: 30px;
+}
+
+footer h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tools img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .container {
+        margin: 100px 20px;
+    }
+    
+    .shopping-cart {
+        width: 100%;
+        right: -100%;
+    }
+}
+        

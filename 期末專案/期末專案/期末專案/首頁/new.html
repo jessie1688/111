@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXX 店家首頁</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="new.css">
+    <!-- 引入 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 頁首導覽列 -->
+    <header>
+        <nav class="navbar">
+            <div class="cart-icon" id="nav-cart-icon">
+                <img src="cart.jpg.jpg" alt="購物車">
+            </div>
+            <ul class="nav-links">
+                <li><a href="test.html">首頁</a></li>
+                <li class="products-dropdown">
+                    <a href="#" class="active">所有商品</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="desserts.html">甜點類</a></li>
+                        <li><a href="coffee.html">咖啡</a></li>
+                    </ul>
+                </li>
+                <li><a href="new.html">活動公告</a></li>
+                <li><a href="story.html">關於我們</a></li>
+                <li><a href="intro.html">產品介紹</a></li>
+                <li><a href="limited.html">期間限定</a></li>
+            </ul>
+            <!-- 在每個頁面的導覽列中修改 user-area 部分 -->
+            <div class="user-area">
+                <a href="member.html" class="active">
+                    <img src="head.jpg" alt="會員頭像">
+                    <a href="Log in0.html" class="member-link">會員</a>  <!-- 修改這裡 -->
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="shopping-cart" id="shopping-cart">
+        <div class="cart-header">
+            <h2>購物車</h2>
+        </div>
+        
+        <div class="cart-items">
+            <!-- 購物車商品項目 -->
+            <div class="cart-item">
+                <img src="IMG_4205.JPG" alt="商品1" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>手工布蕾</h3>
+                    <p class="price">NT$ 120</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">&times;</button>
+            </div>
+    
+            <div class="cart-item">
+                <img src="top2.jpg.JPG" alt="商品2" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>焦糖舞曲</h3>
+                    <p class="price">NT$ 110</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">&times;</button>
+            </div>
+        </div>
+    
+        <div class="cart-summary">
+            <div class="subtotal">
+                <span>小計：</span>
+                <span class="subtotal-amount">NT$ 340</span>
+            </div>
+            <button class="checkout-btn">結帳</button>
+        </div>
+    </aside>
+
+    <!--內文slogan-->
+    <section class="celebration">
+        <div class="celebration-wrapper">
+            <div class="decoration-top">✧･ﾟ:* ✧･ﾟ:*</div>
+            <h2 class="section-title">12月活動詳情</h2>
+            <div class="section-content">
+                <p class="section-info">
+                    慶祝開店一周年<br>
+                    CONGRATULATION<br>
+                    親愛的顧客您好<br>
+                    為慶祝本店開幕一週年,我們將於本月推出全系列商品95折優惠<br>
+                    憑此頁面之截圖於結帳時釋出給店員,即可享有優惠,感謝您的支持。
+                </p>
+            </div>
+            <div class="decoration-bottom">*:･ﾟ✧ *:･ﾟ✧</div>
+        </div>
+    </section>
+
+    <div class="birthday-section">
+        <div class="birthday-content">
+            <div class="birthday-icon">
+                <img src="birth.jpg" alt="生日蛋糕">
+            </div>
+            <div class="birthday-info">
+                <h2>🎉 本月壽星專屬優惠 🎉</h2>
+                <div class="birthday-offers">
+                    <div class="offer-item">
+                        <h3>🎁 生日優惠券</h3>
+                        <p>單筆消費滿 NT$1000 現折 NT$200</p>
+                    </div>
+                    <div class="offer-item">
+                        <h3>⭐ 會員加碼</h3>
+                        <p>生日當月消費可享雙倍點數</p>
+                        <p class="validity">不限消費金額，可與其他優惠同時使用</p>
+                    </div>
+                </div>
+                <div class="birthday-note">
+                    <p>※ 優惠說明：</p>
+                    <ul>
+                        <li>優惠期限為生日當月份</li>
+                        <li>需出示會員證明使用</li>
+                        <li>特定商品恕不適用</li>
+                        <li>詳細規則依現場公告為準</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--聯絡資訊-->
+    <footer>
+        <div class="contact-info">
+            <h3>Contact us</h3>
+            <p>台北分店：0988888888</p>
+            <p>台中分店：0988888888</p>
+            <p>高雄分店：0988888888</p>
+        </div>
+        <div class="visit-info">
+            <h3>Visit us</h3>
+            <p>台北分店：台北市中山區XX路XX號</p>
+            <p>台中分店：台中市中山區XX路XX號</p>
+            <p>高雄分店：高雄市中山區XX路XX號</p>
+            <p>營業時間：11:00 - 21:00</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow us</h3>
+            <div class="tools">
+                <img src="ig.jpg" alt="Instagram">
+                <img src="fb.jpg" alt="Facebook">
+                <img src="mail.jpg" alt="Mail">
+                <img src="twit.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

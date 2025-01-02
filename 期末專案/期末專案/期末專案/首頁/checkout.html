@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+    <link rel="stylesheet" href="desserts.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <nav class="navbar">
+            <div class="cart-icon" id="nav-cart-icon">
+                <img src="cart.jpg.jpg" alt="購物車">
+            </div>
+            <ul class="nav-links">
+                <li><a href="test.html">首頁</a></li>
+                <li class="products-dropdown">
+                    <a href="#">所有商品</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="desserts.html">甜點類</a></li>
+                        <li><a href="coffee.html">咖啡</a></li>
+                    </ul>
+                </li>
+                <li><a href="new.html">活動公告</a></li>
+                <li><a href="story.html">關於我們</a></li>
+                <li><a href="intro.html">產品介紹</a></li>
+                <li><a href="limited.html">期間限定</a></li>
+            </ul>
+            <div class="user-area">
+                <a href="member.html">
+                    <img src="head.jpg" alt="會員頭像">
+                    <a href="Log in0.html" class="member-link">會員</a>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="checkout-container">
+        <h1 class="page-title">結帳</h1>
+        
+        <!-- 訂單摘要 -->
+        <div class="order-summary">
+            <h2>訂單摘要</h2>
+            <div class="cart-items">
+                <!-- 購物車商品會在這裡動態顯示 -->
+            </div>
+            <div class="total-amount">
+                <span>總計：</span>
+                <span class="amount">NT$ 0</span>
+            </div>
+        </div>
+
+        <!-- 結帳表單 -->
+        <form class="checkout-form">
+            <div class="form-section">
+                <h2>收件資訊</h2>
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">電子郵件</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">配送地址</label>
+                    <input type="text" id="address" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>付款方式</h2>
+                <div class="payment-methods">
+                    <div class="payment-option">
+                        <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+                        <label for="credit-card">信用卡付款</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="line-pay" name="payment" value="line-pay">
+                        <label for="line-pay">LINE Pay</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">貨到付款</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-order">確認訂單</button>
+        </form>
+    </div>
+
+    <!--聯絡資訊-->
+    <footer>
+        <div class="contact-info">
+            <h3>Contact us</h3>
+            <p>台北分店：0988888888</p>
+            <p>台中分店：0988888888</p>
+            <p>高雄分店：0988888888</p>
+        </div>
+        <div class="visit-info">
+            <h3>Visit us</h3>
+            <p>台北分店：台北市中山區XX路XX號</p>
+            <p>台中分店：台中市中山區XX路XX號</p>
+            <p>高雄分店：高雄市中山區XX路XX號</p>
+            <p>營業時間：11:00 - 21:00</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow us</h3>
+            <div class="tools">
+                <img src="ig.jpg" alt="Instagram">
+                <img src="fb.jpg" alt="Facebook">
+                <img src="mail.jpg" alt="Mail">
+                <img src="twit.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html> 

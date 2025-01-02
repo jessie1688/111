@@ -1,0 +1,268 @@
+/* 整體布局 */
+body {
+    background-color: #FDF8F3;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 主要內容區域 */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#memberProfileSection {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+/* 個人資料區塊 */
+.profile-header {
+    background-color:#EAE0D5;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.profile-info h2 {
+    color: #5E503F;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-item p {
+    color: #22333B;
+    margin: 12px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 消費紀錄和評論區塊 */
+.record-container, .review-container {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.history-item, .review-item {
+    background-color: #EAE0D5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-left: 4px solid #C6AC8F;
+}
+
+.history-item h3, .review-item h3 {
+    color: #5E503F;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.order-details p, .review-details p {
+    color: #22333B;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* 評分星星 */
+.rating {
+    color: #ffd700;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* 評論內容 */
+.comment {
+    font-style: italic;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Footer 樣式 */
+footer {
+    background-color: #5E503F;
+    padding: 40px 0;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    color: #EAE0D5;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eae0d5;
+}
+
+.social-tools {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-tools img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-tools img:hover {
+    transform: translateY(-5px);
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+/* Header 樣式 */
+.header {
+    background-color: #eae0d5;
+    padding: 10px 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #eae0d5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5E503F;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #5E503F;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+}
+
+.user-area a {
+    text-decoration: none;
+    color: #5E503F;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.user-area a:hover {
+    background-color: #C6AC8F;
+    color: #fff;
+}
+
+/* 主要顏色變量 */
+:root {
+    --primary-dark: #5E503F;
+    --primary-light: #EAE0D5;
+    --accent: #C6AC8F;
+    --background: #FDF8F3;
+    --text-dark: #22333B;
+    --text-light: #FDF8F3;
+}
+
+
+/* 響應式設計 */
+@media screen and (max-width: 768px) {
+    .birthday-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .birthday-offers {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cart-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}

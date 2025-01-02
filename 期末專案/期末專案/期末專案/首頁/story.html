@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們 - XXX</title>
+    <link rel="stylesheet" href="story.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 頁首導覽列 -->
+    <header>
+        <nav class="navbar">
+            <div class="cart-icon" id="nav-cart-icon">
+                <img src="cart.jpg.jpg" alt="購物車">
+            </div>
+            <ul class="nav-links">
+                <li><a href="test.html">首頁</a></li>
+                <li class="products-dropdown">
+                    <a href="#" class="active">所有商品</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="desserts.html">甜點類</a></li>
+                        <li><a href="coffee.html">咖啡</a></li>
+                    </ul>
+                </li>
+                <li><a href="new.html">活動公告</a></li>
+                <li><a href="story.html">關於我們</a></li>
+                <li><a href="intro.html">產品介紹</a></li>
+                <li><a href="limited.html">期間限定</a></li>
+            </ul>
+            <!-- 在每個頁面的導覽列中修改 user-area 部分 -->
+            <div class="user-area">
+                <a href="member.html" class="active">
+                    <img src="head.jpg" alt="會員頭像">
+                    <a href="Log in0.html" class="member-link">會員</a>  <!-- 修改這裡 -->
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="shopping-cart" id="shopping-cart">
+        <div class="cart-header">
+            <h2>購物車</h2>
+        </div>
+        
+        <div class="cart-items">
+            <!-- 購物車商品項目 -->
+            <div class="cart-item">
+                <img src="IMG_4205.JPG" alt="商品1" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>手工布蕾</h3>
+                    <p class="price">NT$ 120</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">&times;</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="top2.jpg.JPG" alt="商品2" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>焦糖舞曲</h3>
+                    <p class="price">NT$ 110</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">&times;</button>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <div class="subtotal">
+                <span>小計：</span>
+                <span class="subtotal-amount">NT$ 340</span>
+            </div>
+            <button class="checkout-btn">結帳</button>
+        </div>
+    </aside>
+
+    <!-- 品牌故事區塊 -->
+    <section>
+        <div class="story-container">
+            <div class="story-text-image">
+                <div class="story-image">
+                    <img src="IMG_4211.JPG" alt="品牌故事">
+                </div>
+                <div class="story-text">
+                    <h2>品牌故事</h2>
+                    <p class="story-subtitle">用心製作的甜蜜時光</p>
+                    <p>
+                        成立於2022年，芋泥store是一間充滿溫度的甜點店。我們相信，一個完美的甜點不僅要美味，更要能傳遞幸福的感覺。每一道甜點都是我們對生活的熱愛，對美好的追求。
+                    </p>
+                    <p>
+                        創辦人小芋在法國藍帶廚藝學院學習期間，深深被法式甜點的精緻與優雅所吸引。回國後，她決定將在法國所學到的技巧與台灣在地食材結合，創造出獨具特色的甜點。每一道甜點都融入了她對甜點的熱情與創意，希望能為顧客帶來不一樣的味蕾體驗。
+                    </p>
+                    <p>
+                        在這裡，我們堅持使用最優質的食材，每天清晨便開始準備，為的就是能讓每位顧客品嚐到最新鮮、最美味的甜點。從選料到烘焙，每個細節都充滿著我們的用心。我們嚴選台灣在地的優質食材，如台東的香蕉、苗栗的草莓、花蓮的檸檬等，與小農合作，確保每一種食材都能展現最佳風味。
+                    </p>
+                    <p>
+                        除了美味的甜點，我們更注重與顧客的互動。店內的空間設計採用溫暖的木質元素，搭配柔和的燈光，希望能為顧客營造一個放鬆愜意的環境。我們的服務人員都經過專業培訓，不只是介紹甜點，更要讓每位顧客感受到賓至如歸的溫暖。
+                    </p>
+                    <p>
+                        我們希望芋泥store不只是一間甜點店，更是一個能讓人放鬆、享受美好時光的溫暖角落。在這裡，每一口甜點都是一份溫暖，每一刻都是值得珍惜的時光。無論是慶祝特別的日子，或是想犒賞自己的平凡時刻，我們都希望能為您帶來一份甜蜜的享受。
+                    </p>
+                    <p>
+                        展望未來，我們會持續創新，不斷推出新的甜點，同時也會舉辦甜點製作課程，希望能與更多喜愛甜點的朋友分享我們的經驗與熱情。我們相信，美味的甜點不只能滿足味蕾，更能溫暖人心，讓生活更加美好。
+                    </p>
+                    <p class="signature">芋泥團隊敬上</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <div class="contact-info">
+            <h3>Contact us</h3>
+            <p>台北分店：0988888888</p>
+            <p>台中分店：0988888888</p>
+            <p>高雄分店：0988888888</p>
+        </div>
+        <div class="visit-info">
+            <h3>Visit us</h3>
+            <p>台北分店：台北市中山區XX路XX號</p>
+            <p>台中分店：台中市中山區XX路XX號</p>
+            <p>高雄分店：高雄市中山區XX路XX號</p>
+            <p>營業時間：11:00 - 21:00</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow us</h3>
+            <div class="tools">
+                <img src="ig.jpg" alt="Instagram">
+                <img src="fb.jpg" alt="Facebook">
+                <img src="mail.jpg" alt="Mail">
+                <img src="twit.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

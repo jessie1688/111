@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜點類</title>
+    <link rel="stylesheet" href="desserts.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <nav class="navbar">
+            <div class="cart-icon" id="nav-cart-icon">
+                <img src="cart.jpg.jpg" alt="購物車">
+            </div>
+            <ul class="nav-links">
+                <li><a href="test.html">首頁</a></li>
+                <li class="products-dropdown">
+                    <a href="#" class="active">所有商品</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="desserts.html" class="active">甜點類</a></li>
+                        <li><a href="coffee.html">咖啡</a></li>
+                    </ul>
+                </li>
+                <li><a href="new.html">活動公告</a></li>
+                <li><a href="story.html">關於我們</a></li>
+                <li><a href="intro.html">產品介紹</a></li>
+                <li><a href="limited.html">期間限定</a></li>
+            </ul>
+            <!-- 在每個頁面的導覽列中修改 user-area 部分 -->
+            <div class="user-area">
+                <a href="member.html" class="active">
+                    <img src="head.jpg" alt="會員頭像">
+                    <a href="Log in0.html" class="member-link">會員</a>  <!-- 修改這裡 -->
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="shopping-cart" id="shopping-cart">
+        <div class="cart-header">
+            <h2>購物車</h2>
+        </div>
+        
+        <div class="cart-items">
+            <!-- 購物車商品項目 -->
+            <div class="cart-item">
+                <img src="IMG_4205.JPG" alt="商品1" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>手工布蕾</h3>
+                    <p class="price">NT$ 120</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">&times;</button>
+            </div>
+    
+            <div class="cart-item">
+                <img src="top2.jpg.JPG" alt="商品2" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>焦糖舞曲</h3>
+                    <p class="price">NT$ 110</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">&times;</button>
+            </div>
+        </div>
+    
+        <div class="cart-summary">
+            <div class="subtotal">
+                <span>小計：</span>
+                <span class="subtotal-amount">NT$ 340</span>
+            </div>
+            <button class="checkout-btn">結帳</button>
+        </div>
+    </aside>
+
+    <!-- 商品展示區域 -->
+    <div class="products-container">
+        <h1 class="page-title">甜點類</h1>
+        <div class="product-grid">
+            <!-- 第一行商品 -->
+            <div class="product-item">
+                <img src="milkshake.JPG" alt="草莓奶昔">
+                <h3>草莓奶昔</h3>
+                <p class="price">NT$ 90</p>
+                <button class="add-to-cart" 
+                    data-name="草莓奶昔" 
+                    data-price="90" 
+                    data-image="milkshake.jpg">加入購物車</button>
+            </div>
+            <div class="product-item">
+                <img src="muffin.JPG" alt="草莓鬆餅">
+                <h3>草莓鬆餅</h3>
+                <p class="price">NT$ 110</p>
+                <button class="add-to-cart" 
+                    data-name="草莓鬆餅" 
+                    data-price="110" 
+                    data-image="muffin.jpg">加入購物車</button>
+            </div>
+            <div class="product-item">
+                <img src="bagel.JPG" alt="草莓貝果">
+                <h3>草莓貝果</h3>
+                <p class="price">NT$ 130</p>
+                <button class="add-to-cart" 
+                    data-name="草莓貝果" 
+                    data-price="130" 
+                    data-image="bagel.JPG">加入購物車</button>
+            </div>
+            <div class="product-item">
+                <img src="IMG_4218.JPG" alt="草莓千層派">
+                <h3>草莓千層派</h3>
+                <p class="price">NT$ 150</p>
+                <button class="add-to-cart" 
+                    data-name="草莓千層派" 
+                    data-price="150" 
+                    data-image="IMG_4218.JPG">加入購物車</button>
+            </div>
+            <!-- 第二行商品 -->
+            <div class="product-item">
+                <img src="IMG_4219.JPG" alt="草莓奶酪">
+                <h3>草莓奶酪</h3>
+                <p class="price">NT$ 110</p>
+                <button class="add-to-cart" 
+                    data-name="草莓奶酪" 
+                    data-price="110" 
+                    data-image="IMG_4219.JPG">加入購物車</button>
+            </div>
+            <div class="product-item">
+                <img src="IMG_4210.JPG" alt="草莓季鬆餅">
+                <h3>草莓季限定鬆餅</h3>
+                <p class="price">NT$ 90</p>
+                <button class="add-to-cart" 
+                    data-name="草莓季限定鬆餅" 
+                    data-price="90" 
+                    data-image="IMG_4210.JPG">加入購物車</button>
+            </div>
+            <div class="product-item">
+                <img src="icecream.JPG" alt="草莓冰淇淋盤">
+                <h3>草莓冰淇淋盤</h3>
+                <p class="price">NT$ 160</p>
+                <button class="add-to-cart" 
+                    data-name="草莓冰淇淋盤" 
+                    data-price="160" 
+                    data-image="icecream.JPG">加入購物車</button>
+            </div>
+            <div class="product-item">
+                <img src="ice.jpg" alt="草莓冰沙">
+                <h3>草莓冰沙</h3>
+                <p class="price">NT$ 140</p>
+                <button class="add-to-cart" 
+                    data-name="草莓冰沙" 
+                    data-price="140" 
+                    data-image="ice.jpg">加入購物車</button>
+            </div>
+        </div>
+    </div>
+
+    <!--聯絡資訊-->
+    <footer>
+        <div class="contact-info">
+            <h3>Contact us</h3>
+            <p>台北分店：0988888888</p>
+            <p>台中分店：0988888888</p>
+            <p>高雄分店：0988888888</p>
+        </div>
+        <div class="visit-info">
+            <h3>Visit us</h3>
+            <p>台北分店：台北市中山區XX路XX號</p>
+            <p>台中分店：台中市中山區XX路XX號</p>
+            <p>高雄分店：高雄市中山區XX路XX號</p>
+            <p>營業時間：11:00 - 21:00</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow us</h3>
+            <div class="tools">
+                <img src="ig.jpg" alt="Instagram">
+                <img src="fb.jpg" alt="Facebook">
+                <img src="mail.jpg" alt="Mail">
+                <img src="twit.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 引入 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
